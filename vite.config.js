@@ -6,9 +6,9 @@ export default defineConfig(({ mode }) => {
       outDir: 'dist', // Output directory
       minify: 'terser',
       lib: {
-        entry: './src/MenuModern.js',
-        name: 'MenuModern',
-        fileName: 'menu-modern',
+        entry: './src/ModernMenu.js',
+        name: 'ModernMenu',
+        fileName: 'modern-menu',
       },
     },
   };

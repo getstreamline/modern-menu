@@ -1,15 +1,15 @@
 {
-  "name": "@getstreamline/menu-modern",
+  "name": "@getstreamline/modern-menu",
   "version": "0.2.1",
   "license": "MIT",
   "type": "module",
   "files": "dist",
-  "main": "./dist/menu-modern.umd.cjs",
-  "module": "./dist/menu-modern.js",
+  "main": "./dist/modern-menu.umd.cjs",
+  "module": "./dist/modern-menu.js",
   "exports": {
     ".": {
-      "import": "./dist/menu-modern.js",
-      "require": "./dist/menu-modern.umd.cjs"
+      "import": "./dist/modern-menu.js",
+      "require": "./dist/modern-menu.umd.cjs"
     }
   },
   "scripts": {
