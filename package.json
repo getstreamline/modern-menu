@@ -4,12 +4,13 @@
   "license": "MIT",
   "type": "module",
   "files": "dist",
-  "main": "./dist/modern-menu.umd.cjs",
-  "module": "./dist/modern-menu.js",
+  "main": "dist/modern-menu.umd.cjs",
+  "types": "types/ModernMenu.d.ts",
+  "module": "dist/modern-menu.js",
   "exports": {
     ".": {
-      "import": "./dist/modern-menu.js",
-      "require": "./dist/modern-menu.umd.cjs"
+      "import": "dist/modern-menu.js",
+      "require": "dist/modern-menu.umd.cjs"
     }
   },
   "scripts": {
