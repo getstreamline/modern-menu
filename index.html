@@ -91,7 +91,7 @@
   <button type="button">Before</button>
 
   <nav>
-    <ul class="sl-menu-modern">
+    <ul class="sl-modern-menu">
       <li>
         <a href="/">Home</a>
       </li>
@@ -168,13 +168,13 @@
 
   <button type="button">After</button>
 
-  <script src="/dist/menu-modern.umd.cjs"></script>
+  <script src="/dist/modern-menu.umd.cjs"></script>
   <script>
     // allow cypress to "turn off" javascript for desktop_hover_fallback.cy.js
     if (!window.__JS_DISABLED__) {
       document.addEventListener('DOMContentLoaded', () => {
-        const element = document.querySelector('.sl-menu-modern');
-        new MenuModern(element);
+        const element = document.querySelector('.sl-modern-menu');
+        new ModernMenu(element);
       });
     }
   </script>
