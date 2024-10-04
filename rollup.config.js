@@ -5,12 +5,19 @@ import { terser } from 'rollup-plugin-terser';
 
 export default {
   input: './src/ModernMenu.js',
-  output: {
-    file: './dist/modern-menu.js',
-    format: 'umd',
-    name: 'ModernMenu',
-    sourcemap: false,
-  },
+  output: [
+    {
+      file: './dist/modern-menu.umd.js',
+      format: 'umd',
+      name: 'ModernMenu',
+      sourcemap: false,
+    },
+    {
+      file: './dist/modern-menu.esm.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  ],
   plugins: [
     resolve(),
     commonjs(),
