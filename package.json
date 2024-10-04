@@ -2,14 +2,14 @@
   "name": "@getstreamline/modern-menu",
   "version": "0.3.0",
   "license": "MIT",
-  "type": "module",
-  "files": "dist",
-  "main": "./dist/modern-menu.umd.cjs",
+  "files": ["dist"],
+  "main": "./dist/modern-menu.umd.js",
+  "module": "./dist/modern-menu.esm.js",
   "types": "./types/ModernMenu.d.ts",
-  "module": "./dist/modern-menu.js",
   "exports": {
     ".": {
-      "import": "./dist/modern-menu.js"
+      "import": "./dist/modern-menu.esm.js",
+      "require": "./dist/modern-menu.umd.js"
     }
   },
   "scripts": {
