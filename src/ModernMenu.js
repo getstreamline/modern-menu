@@ -12,11 +12,13 @@ const HOVER_LEAVE_TIMEOUT = 400;
 
 let lastSubmenuIndex = 0;
 
+
 function generateSubmenuId() {
   const submenuIndex = lastSubmenuIndex + 1;
   lastSubmenuIndex = submenuIndex;
   return `sl-menu__submenu_${submenuIndex}`;
 }
+
 
 function isVisible(element) {
   if (!element) return false;
